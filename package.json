@@ -1,7 +1,7 @@
 {
   "name": "lost-found",
   "version": "1.0.0",
-  "description": "",
+  "description": "exploring lost found data",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 5000",
