@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Joe Kent</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC:900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      h1 {
+        font-family: 'Playfair Display SC', serif;
+        font-weight: 900;
+        font-size: 48px;
+        margin: 16px;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      section {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+        padding: 0 8px;
+      }
+
+      section p {
+        display: inline-block;
+      }
+
+      /*section p, h1 {
+        display: inline;
+        margin: 0;
+      }*/
+
+      #chart text {
+        text-anchor: middle;
+        transition: opacity 1s;
+      }
+
+      #chart text.title {
+        font-size: 16px;
+        font-family: 'Playfair Display SC', serif;
+      }
+
+      #chart text.sub-title {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MTA Lost & Found</h1>
+      <p>What items are people losing the most?</p>
+    </header>
+    <svg id="chart"></svg>
+    <section>
+      <p>When you lose something in the NYC subway, there is a chance, albeit small, that your lost item will be recovered. The MTA Lost & Found office works under the A train at 34st Street. They keep a systematic collection of everything brought to them & try to reunite the items with their rightful owners.<p>
+      <p>Some of the most common things people lose seem rather obvious, metro cards, cell phones, any anything you keep in your wallets such as cash, credit cards, and identification. The more you shop around though, the stranger it gets.</p>
+      <p>For example, two missing air conditioners were logged into the system. How do you lose an air conditioner in the subway?</p>
+      <p>Now, I assumed it couldn't get much worse than that, as air conditioners are pretty hard to forget given that they're relatively large & heavy. Sadly I was wrong, as ten televisions are also in this dataset. I don't have any specific dimensions, so I'm praying these were some old, air conditioner sized analog televisions.</p>
+      <p>Not all lost items are obnoxiously massive, however, as over thirty-five thousand articles of clothing have also been reported missing. Even stranger, underwear makes up 7% of all the clothing that went missing. I'm telling myself this is Victoria's Secret bags being left on the train and not the unthinkable.</p>
+      <p>Regardless of how the items get there, the artifacts of the MTA lost & found office represent New Yorkers and the people visiting in a way that's hard to observe elsewhere. And occasionally, they might be able to save that iPhone you left on the seat.</p>
+    </section>
+    <script src="./public/main.min.js"></script>
+  </body>
+</html>
