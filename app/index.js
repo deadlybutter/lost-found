@@ -19,11 +19,11 @@ const row = r => ({
 
 const draw = data => {
   const width = window.innerWidth;
-  const height = width;
+  const height = Math.min(width * .9, 1100);
 
-  const radius = width * .3;
+  const radius = Math.min(width * .3, 400);
   const centerX = width / 2;
-  const centerY = (height / 2) - (radius / 4);
+  const centerY = height / 2;
 
   const barSpacing = 1.4;
   const barWidth = width / (data.length * barSpacing);
@@ -41,7 +41,7 @@ const draw = data => {
 
   const quantityScale = d3.scaleLinear()
     .domain([0, d3.max(data, d => d.count)])
-    .range([0, width * .20])
+    .range([0, (height - (radius * 2)) / 2])
 
   bar.append('rect')
     .attr('width', barWidth)
